@@ -1,10 +1,10 @@
-# CLAUDE-SKILLS
+# BASE_CODIGO
 
 Fundação web reutilizável v1.31, organizada em um `CLAUDE.md` com regras permanentes e 13 skills temáticas para orientar o Claude Code no desenvolvimento de projetos web.
 
-**Repositório oficial:** [https://github.com/rafavlad/CLAUDE-SKILLS](https://github.com/rafavlad/CLAUDE-SKILLS)  
+**Repositório oficial:** [https://github.com/rafavlad/BASE_CODIGO](https://github.com/rafavlad/BASE_CODIGO)  
 **Branch de referência dos links diretos:** `main`  
-**Versão deste pacote:** `1.31-modular-r2`
+**Versão deste pacote:** `1.31-modular-r3`
 
 ## Para que serve
 
@@ -15,7 +15,7 @@ O pacote não é, por si só, um aplicativo web pronto. Ele documenta o processo
 ## Estrutura oficial
 
 ```text
-CLAUDE-SKILLS/
+BASE_CODIGO/
 ├── CLAUDE.md
 ├── .claude/
 │   └── skills/
@@ -55,22 +55,22 @@ CLAUDE-SKILLS/
 
 Algumas interfaces de chat escondem arquivos de diretórios iniciados por ponto, como `.claude/`. Se a integração do GitHub não permitir selecionar uma skill, use o endereço `raw.githubusercontent.com` correspondente. Estes links dependem de os arquivos estarem publicados na branch `main` com a estrutura acima.
 
-- [`CLAUDE.md` (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/CLAUDE.md)
-- [`README.md` (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/README.md)
-- [Índice (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/docs/INDICE-DO-PACOTE.md)
-- [Princípios globais (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/principios-globais/SKILL.md)
-- [Fases e autorizações (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/fases-e-autorizacoes/SKILL.md)
-- [Segurança e permissões (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/seguranca-permissoes/SKILL.md)
-- [Arquitetura e stack (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/arquitetura-stack/SKILL.md)
-- [Auditoria de dependências (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/auditoria-dependencias/SKILL.md)
-- [CI e Dependabot (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/ci-dependabot/SKILL.md)
-- [Interface e referências (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/interface-cliente-referencias/SKILL.md)
-- [Qualidade e acessibilidade (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/qualidade-acessibilidade/SKILL.md)
-- [Módulos opcionais (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/modulos-opcionais/SKILL.md)
-- [Git e integridade (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/git-integridade/SKILL.md)
-- [Documentação (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/documentacao-claude-md/SKILL.md)
-- [Continuidade de sessões (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/continuidade-sessoes/SKILL.md)
-- [Aceitação final (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/aceitacao-final/SKILL.md)
+- [`CLAUDE.md` (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/CLAUDE.md)
+- [`README.md` (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/README.md)
+- [Índice (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/docs/INDICE-DO-PACOTE.md)
+- [Princípios globais (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/principios-globais/SKILL.md)
+- [Fases e autorizações (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/fases-e-autorizacoes/SKILL.md)
+- [Segurança e permissões (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/seguranca-permissoes/SKILL.md)
+- [Arquitetura e stack (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/arquitetura-stack/SKILL.md)
+- [Auditoria de dependências (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/auditoria-dependencias/SKILL.md)
+- [CI e Dependabot (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/ci-dependabot/SKILL.md)
+- [Interface e referências (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/interface-cliente-referencias/SKILL.md)
+- [Qualidade e acessibilidade (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/qualidade-acessibilidade/SKILL.md)
+- [Módulos opcionais (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/modulos-opcionais/SKILL.md)
+- [Git e integridade (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/git-integridade/SKILL.md)
+- [Documentação (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/documentacao-claude-md/SKILL.md)
+- [Continuidade de sessões (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/continuidade-sessoes/SKILL.md)
+- [Aceitação final (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/.claude/skills/aceitacao-final/SKILL.md)
 
 ## Como usar com Claude Code
 

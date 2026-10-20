@@ -49,10 +49,20 @@
 ## Atualização estrutural para publicação no GitHub (r2)
 
 - A estrutura do pacote mantém as 13 skills no caminho canônico `.claude/skills/<nome>/SKILL.md`, conforme o formato esperado pelo Claude Code.
-- Criado um `README.md` completo com a finalidade do repositório, a árvore oficial, links relativos, links Raw para leitura direta e instruções de uso. Os links Raw apontam para `https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/` e passam a funcionar quando esta estrutura for publicada na branch `main`.
+- Criado um `README.md` completo com a finalidade do repositório, a árvore oficial, links relativos, links Raw para leitura direta e instruções de uso. Os links Raw apontam para `https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/` e passam a funcionar quando esta estrutura for publicada na branch `main`.
 - `docs/INDICE-DO-PACOTE.md` agora contém links relativos que abrem diretamente as skills na estrutura canônica do repositório.
 - `CLAUDE.md` declara a URL oficial do repositório e proíbe manter uma cópia divergente em `skills/` na raiz.
 - Removido o título duplicado no início de `principios-globais/SKILL.md`.
 - Atualizado `MANIFEST.json` para a versão `1.31-modular-r2`, incluindo o README e hashes/tamanhos recalculados. O manifesto não contém hash de si próprio, para evitar autorreferência.
 - **Verificações realizadas nesta edição:** JSON do manifesto válido; cada caminho listado existe; tamanhos e SHA-256 conferem; links relativos Markdown para arquivos locais foram verificados; não há diretório alternativo `skills/` na raiz do pacote; ZIP reaberto e testado.
 - **Limite:** estas são verificações estáticas da estrutura do pacote. Não comprovam o comportamento de skills numa sessão real nem alteram diretamente o repositório remoto.
+
+
+## Atualização dos caminhos do GitHub após renomeação do repositório (r3)
+
+- Atualizadas as referências de repositório no `CLAUDE.md`, no `README.md` e no `docs/INDICE-DO-PACOTE.md` para `rafavlad/BASE_CODIGO`.
+- Atualizados os links Raw do README para a branch `main` do repositório `BASE_CODIGO`.
+- Atualizados o título e a árvore de exemplo no README para usar `BASE_CODIGO`, sem alterar os caminhos canônicos `.claude/skills/<nome>/SKILL.md`.
+- Atualizada a versão para `1.31-modular-r3`.
+- **Verificações desta edição:** busca textual por referências ao nome anterior; validação JSON do manifesto; verificação dos caminhos listados e dos hashes/tamanhos SHA-256; teste de integridade do ZIP.
+- **Limite:** as mudanças estão no pacote local gerado e ainda não foram enviadas ao repositório remoto.

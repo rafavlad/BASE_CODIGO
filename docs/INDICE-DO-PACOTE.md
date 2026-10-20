@@ -1,6 +1,6 @@
 # Índice do pacote de skills — Fundação web v1.31
 
-> Repositório de referência: [`rafavlad/CLAUDE-SKILLS`](https://github.com/rafavlad/CLAUDE-SKILLS). As skills ficam em `.claude/skills/`; não as mova para `skills/` na raiz, pois isso quebra o caminho canônico de descoberta do Claude Code. Para abrir arquivos em interfaces que ocultam pastas iniciadas por ponto, use os links diretos do README.
+> Repositório de referência: [`rafavlad/BASE_CODIGO`](https://github.com/rafavlad/BASE_CODIGO). As skills ficam em `.claude/skills/`; não as mova para `skills/` na raiz, pois isso quebra o caminho canônico de descoberta do Claude Code. Para abrir arquivos em interfaces que ocultam pastas iniciadas por ponto, use os links diretos do README.
 
 
 ## Como funciona
