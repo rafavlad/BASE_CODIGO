@@ -3,7 +3,7 @@ name: git-integridade
 description: "Integridade do repositório, identidade Git, autorização de commit e proibições de operações remotas. Use antes de qualquer operação Git com efeitos colaterais."
 ---
 
-# 12. GIT, COMMITS E INTEGRIDADE DO REPOSITÓRIO
+# Integridade do Git
 
 ## 12.1 Fase 0
 
@@ -52,7 +52,7 @@ Antes do commit inicial:
 4. Confirme que arquivos de ambiente protegidos não serão versionados.
 5. Confirme que arquivos temporários não serão versionados.
 6. Confirme que alterações preexistentes do usuário foram preservadas.
-7. Confirme que os critérios obrigatórios foram atendidos ou, se o commit estiver sendo autorizado pela via excepcional da seção 12.6, que cada pendência aceita foi explicitamente citada e autorizada pelo usuário. A autorização excepcional não supera falha crítica de integridade, segredo exposto, identidade Git ausente/incorreta nem dúvida razoável sobre os arquivos a incluir.
+7. Confirme que os critérios obrigatórios foram atendidos ou, se o commit estiver sendo autorizado pela via excepcional da regra de commit inicial da skill `git-integridade`, que cada pendência aceita foi explicitamente citada e autorizada pelo usuário. A autorização excepcional não supera falha crítica de integridade, segredo exposto, identidade Git ausente/incorreta nem dúvida razoável sobre os arquivos a incluir.
 8. Confirme a identidade Git.
 9. Confirme que o commit corresponde ao escopo autorizado.
 

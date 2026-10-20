@@ -3,7 +3,7 @@ name: arquitetura-stack
 description: "Estrutura do projeto, tecnologias, TypeScript, testes, lint, scripts npm, Node, lockfile e gitignore. Use para planejar ou implementar a fundação técnica."
 ---
 
-# 4. ESTRUTURA DO PROJETO
+# Arquitetura e stack
 
 Utilize esta estrutura como referência:
 
@@ -65,7 +65,7 @@ Arquivos de teste podem ser criados em `src/` e `scripts/` quando houver propós
 
 ---
 
-# 5. STACK, CONFIGURAÇÕES E SCRIPTS
+## Stack, configurações e scripts
 
 ## 5.1 Tecnologias da Fase 1A
 

@@ -7,7 +7,7 @@ Este pacote é mantido no repositório GitHub [`rafavlad/BASE_CODIGO`](https://g
 1. Execute somente a fase explicitamente autorizada. Nunca avance de fase automaticamente.
 2. Não instale dependências, altere arquivos, inicialize Git, faça commit, altere permissões ou execute ações remotas antes da autorização exigida para a fase/operação.
 3. Priorize segurança e privacidade, depois autorizações/escopo, integridade do repositório, correção verificável, testes/acessibilidade, documentação, desempenho/simplicidade e conveniência.
-4. Não leia, imprima, copie, registre ou exponha valores de arquivos de ambiente protegidos. A única exceção é o canário estritamente controlado de `.env.fake-test`, seguindo por completo a skill `seguranca-permissoes` e somente quando a seção 3.5 tiver sido fornecida pelo usuário na sessão atual.
+4. Não leia, imprima, copie, registre ou exponha valores de arquivos de ambiente protegidos. A única exceção é o canário estritamente controlado de `.env.fake-test`, seguindo por completo a skill `seguranca-permissoes` e somente quando o usuário fornecer explicitamente o procedimento “Canário de permissões” dessa skill na sessão atual.
 5. Não enfraqueça TypeScript estrito, lint, testes ou controles de segurança. Não use `any` como atalho. Não esconda falhas nem invente versões, resultados, evidências, hashes, URLs ou saídas.
 6. Um arquivo, configuração, script, teste, relatório ou código de saída zero não prova, sozinho, que um controle funciona. Só declare testes/verificações aprovados depois de executá-los e validar evidências.
 7. Preserve alterações preexistentes, arquivos não rastreados e mudanças desconhecidas. Antes de editar, registre o estado inicial relevante sem segredos; antes de terminar, compare estado inicial/final, revise o diff e explique as diferenças.
@@ -21,13 +21,17 @@ Este pacote é mantido no repositório GitHub [`rafavlad/BASE_CODIGO`](https://g
 
 ## Carregamento obrigatório por fase
 
-Em todas as fases, leia `principios-globais`, `fases-e-autorizacoes`, `seguranca-permissoes`, `git-integridade` e `continuidade-sessoes` antes de operar. Depois carregue as skills temáticas indicadas abaixo. Se houver dúvida sobre relevância, leia a skill em vez de adivinhar.
+Este `CLAUDE.md` é o roteador de instruções deste repositório de fundação; **não o copie sem adaptação como `CLAUDE.md` de um projeto de cliente**. Cada projeto de cliente deve ter seu próprio `CLAUDE.md`, gerado a partir dos requisitos da skill `documentacao-claude-md` e ajustado ao código, aos comandos, aos módulos e às decisões reais daquele projeto.
 
-- **Fase 0:** adicione `arquitetura-stack`, `aceitacao-final`.
-- **Fase 1A:** adicione `arquitetura-stack`, `auditoria-dependencias`, `ci-dependabot`, `documentacao-claude-md`, `qualidade-acessibilidade` e `aceitacao-final`.
-- **Fase 1B:** adicione `arquitetura-stack`, `auditoria-dependencias`, `interface-cliente-referencias`, `ci-dependabot`, `qualidade-acessibilidade`, `documentacao-claude-md` e `aceitacao-final`. A confirmação manual de `/permissions` e o canário são portões prévios, não formalidades decorativas.
-- **Fase 2:** adicione `documentacao-claude-md`, `aceitacao-final`. Não implemente módulos opcionais sem autorização própria.
-- **Módulo opcional:** adicione `modulos-opcionais` e as skills técnicas correspondentes.
+Em todas as fases, leia integralmente `principios-globais`, `fases-e-autorizacoes`, `seguranca-permissoes`, `git-integridade` e `continuidade-sessoes` antes de operar. Depois carregue integralmente as skills temáticas indicadas abaixo. As fases de leitura/planejamento continuam somente leitura; carregar uma skill não autoriza escrita nem avanço de fase.
+
+- **Fase 0 — inspeção somente leitura:** adicione `arquitetura-stack`, `auditoria-dependencias`, `ci-dependabot`, `interface-cliente-referencias`, `qualidade-acessibilidade` e `aceitacao-final`. Use essas skills apenas para diagnosticar e planejar; nenhuma autoriza implementação nesta fase.
+- **Fase 1A — fundação técnica:** adicione `arquitetura-stack`, `auditoria-dependencias`, `ci-dependabot`, `interface-cliente-referencias`, `qualidade-acessibilidade`, `documentacao-claude-md` e `aceitacao-final`. A skill de interface também define a separação entre núcleo e cliente, mesmo antes da implementação da interface.
+- **Fase 1B — interface e componentes:** adicione `arquitetura-stack`, `auditoria-dependencias`, `interface-cliente-referencias`, `ci-dependabot`, `qualidade-acessibilidade`, `documentacao-claude-md` e `aceitacao-final`. A confirmação manual de `/permissions` e o canário são portões prévios, não formalidades decorativas.
+- **Fase 2 — documentação e consolidação:** adicione `documentacao-claude-md`, `modulos-opcionais` e `aceitacao-final`. Leia `modulos-opcionais` somente para documentar módulos futuros em `docs/MODULES.md`; essa leitura não autoriza implementar qualquer módulo.
+- **Módulo opcional explicitamente considerado:** adicione `modulos-opcionais` e as skills técnicas correspondentes. A implementação exige escopo e autorização próprios.
+
+Se houver dúvida se uma skill é necessária para cumprir um requisito da fase, leia-a antes de agir; não use a matriz como justificativa para omitir controles.
 
 ## Estados e autorizações
 
@@ -44,5 +48,5 @@ Use exatamente os estados `APPROVED`, `REJECTED`, `NOT RUN`, `INCOMPLETE`, `PEND
 
 - Índice, matriz de skills e mapa de migração: `docs/INDICE-DO-PACOTE.md`.
 - Mensagens curtas para iniciar sessões: `docs/MENSAGENS-DE-SESSAO.md`.
-- Documentação do projeto-base, histórico cumulativo de alterações e critérios de entrega: skill `documentacao-claude-md` e arquivo `docs/REGISTRO-ALTERACOES.md`.
+- Documentação do projeto-base, criação de `CLAUDE.md` específico por cliente, histórico cumulativo e critérios de entrega: skill `documentacao-claude-md` e arquivo `docs/REGISTRO-ALTERACOES.md`.
 - Antes de cada ação, confirme qual fase foi autorizada e que todos os requisitos da skill aplicável foram lidos. Ao finalizar/interromper, produza relatório e resumo de continuidade conforme as skills de fases e continuidade.

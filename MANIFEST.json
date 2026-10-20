@@ -1,100 +1,100 @@
 {
-  "version": "1.31-modular-r3",
+  "version": "2.0.0",
   "files": [
     {
       "path": ".claude/skills/aceitacao-final/SKILL.md",
-      "bytes": 11581,
-      "sha256": "1cecee8270ba275a04d9d2ef16b3a73ff0924cb55027a7023775f94a84200d4c"
+      "bytes": 11949,
+      "sha256": "99b50886d3852ef2fcb8da26ed3e9b239311f8515621345255c55e1cbc787da6"
     },
     {
       "path": ".claude/skills/arquitetura-stack/SKILL.md",
-      "bytes": 7803,
-      "sha256": "7eee47f9ed9d318a8ffd2e7919aec972c0d5622def133070f37255310bcfb2b5"
+      "bytes": 7797,
+      "sha256": "3cb79330ce177cd747ad79cac2276795f1a3aaf96e6a1da45675cb9ca317e4be"
     },
     {
       "path": ".claude/skills/auditoria-dependencias/SKILL.md",
-      "bytes": 37688,
-      "sha256": "25c2a00ad5723b86b96354d75f3eeb08044609df733997e0d7b61193b2a2e3b7"
+      "bytes": 38025,
+      "sha256": "22adde019f659b2c69efe2da615e4c692ff802a799035e2eca2c7769b432f4fd"
     },
     {
       "path": ".claude/skills/ci-dependabot/SKILL.md",
-      "bytes": 6158,
-      "sha256": "1d5ae256b3f779678beceaca6f42b69cdc641e21cd578fd3c3d7ff83ffb54378"
+      "bytes": 6139,
+      "sha256": "491a2d0c5230fdcf5db63a934689ca036573f0fde33929c239ac817be73a5908"
     },
     {
       "path": ".claude/skills/continuidade-sessoes/SKILL.md",
-      "bytes": 7344,
-      "sha256": "8dbf74a1ccadf2ad6569e6c6ab55269ec3794788603adaaf613ce7ebb1a27e52"
+      "bytes": 7487,
+      "sha256": "4f74fcf9209c1096d56e775436ecf3e5ece4fb071cf197c60323b766eaca5fe3"
     },
     {
       "path": ".claude/skills/documentacao-claude-md/SKILL.md",
-      "bytes": 12435,
-      "sha256": "ebd45b205d9425a981a2a79773bb803d6134d58734a349d129f795e04774803d"
+      "bytes": 13265,
+      "sha256": "5be32c5462b6d80e2ec4460e3aee1bff47bd88417ba6c26ad567ae23587b5ae7"
     },
     {
       "path": ".claude/skills/fases-e-autorizacoes/SKILL.md",
-      "bytes": 30869,
-      "sha256": "0ce3472875bb92f89615fea0d3f448a86980c4387def0abae55276972594f029"
+      "bytes": 31654,
+      "sha256": "481cf55143ce5299ba6846c3f703dd440878ae990ea34d4d883e1410a03f7560"
     },
     {
       "path": ".claude/skills/git-integridade/SKILL.md",
-      "bytes": 5500,
-      "sha256": "5b4b84e3ea05bd6b34a7ebe21b2e300e498dc4aa8cf7785c2788ba5a86d7ceaa"
+      "bytes": 5510,
+      "sha256": "15ca0bcee453378e5c71c872486104b2b1935a868d13ef0f6aa141870c5a7e4e"
     },
     {
       "path": ".claude/skills/interface-cliente-referencias/SKILL.md",
-      "bytes": 10300,
-      "sha256": "ac8a60cdb8e39d336a3f1bfc9e38f02fc1c75d4139805bb7d2f1b653a7156a90"
+      "bytes": 10425,
+      "sha256": "73ce99a19ac01cb3d52981107e40123b0f773cfc61a4af89e72a913c0280ab13"
     },
     {
       "path": ".claude/skills/modulos-opcionais/SKILL.md",
-      "bytes": 2356,
-      "sha256": "1d73ef8a796e160f935783aa6a8cdf4232f7a2e997734147123c5031b48d9d87"
+      "bytes": 2344,
+      "sha256": "e20cdf42eb74f0c1f68cca2645ff340744bff2baaa89fb88f033c2feb32b0c29"
     },
     {
       "path": ".claude/skills/principios-globais/SKILL.md",
-      "bytes": 18069,
-      "sha256": "8fe1e5ead9b83296650a8cc9b7a643ef475c116c5074efaaef8701d6be899253"
+      "bytes": 14779,
+      "sha256": "65142a21d28a80a59e78c8362db632c03320ec386a679fbb913fd8d7c1e2d281"
     },
     {
       "path": ".claude/skills/qualidade-acessibilidade/SKILL.md",
-      "bytes": 8757,
-      "sha256": "ab72eff54a52c374d5bfb151cb473f97082dc7061f23804317ea2d6201aac609"
+      "bytes": 8735,
+      "sha256": "10ce934a79990d08e76357e7ef53ecd52c94131bd467fb2ecab614617779d00d"
     },
     {
       "path": ".claude/skills/seguranca-permissoes/SKILL.md",
-      "bytes": 14077,
-      "sha256": "37e7e9ebd2249f7b5aa35dbdbd47506e5aaf4d64a599862e20176b7d97b4e0b6"
+      "bytes": 14248,
+      "sha256": "eeb28da94d909cd7149914de1410f3a35903d5af66be648c18f6650b2f976f23"
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 6919,
-      "sha256": "120f8a263f6ab20842b265e015c95fd8681a7f8d8bd3aae30c697f5725464de7"
+      "bytes": 8275,
+      "sha256": "a220932002d1e737ecf026d19c4b8a221993debe689dd1cfb6fd450bcc38317a"
     },
     {
       "path": "README.md",
-      "bytes": 6552,
-      "sha256": "5c7a95699c8ce23945aab37f20f0ea57bdc8b9aa70ee3b725578b065f1e0a6fa"
+      "bytes": 6817,
+      "sha256": "556b8a2f9f919d6815e339089227142ea476875b9082fb9f8d2c529b5716d0fc"
     },
     {
       "path": "docs/INDICE-DO-PACOTE.md",
-      "bytes": 8343,
-      "sha256": "96dd6454b4fea17e9418ec5a371b436b1b340d48b9257201c238b323759fc615"
+      "bytes": 6947,
+      "sha256": "ffbc89ff2bc836aca11150b1ecfcb3a335ba9c379c3569638502e091c71b0221"
     },
     {
       "path": "docs/MENSAGENS-DE-SESSAO.md",
-      "bytes": 17354,
-      "sha256": "182d022e7a5478b58c0c284e5e555806cb6ef49c98a3dd5ef2e59970487ae611"
+      "bytes": 19087,
+      "sha256": "f62edcc24dbe1dc811b1446877a38cfa30412f0b3d1f9febe2f7c130e1254136"
     },
     {
       "path": "docs/REGISTRO-ALTERACOES.md",
-      "bytes": 3463,
-      "sha256": "0d33b95ff593aefd4728253f56d5617a91a1d6f7221f71aa4a790c03f35b6732"
+      "bytes": 5385,
+      "sha256": "3357a5326e4db30d3a92a974ddf56ba2cf74a978e75a03f304faaa02bf1ff523"
     },
     {
       "path": "docs/RELATORIO-DE-VALIDACAO.md",
-      "bytes": 6413,
-      "sha256": "dbf7580c5ae1d460b05073dbb968494ca14a2d23a3840cda002934f76e00ab4b"
+      "bytes": 5637,
+      "sha256": "7d98f486fb14d07867d8c93e6a919612f88953c000226baedd2e7a30349ccd8d"
     }
   ]
 }

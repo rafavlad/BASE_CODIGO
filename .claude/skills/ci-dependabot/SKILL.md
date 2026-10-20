@@ -3,7 +3,7 @@ name: ci-dependabot
 description: "GitHub Actions, CI, segurança de tokens, pinagem de actions e Dependabot. Use ao construir ou revisar a automação CI."
 ---
 
-# 7. CI, GITHUB ACTIONS E DEPENDABOT
+# CI e Dependabot
 
 ## 7.1 Estrutura do workflow
 

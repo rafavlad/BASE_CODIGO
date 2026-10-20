@@ -1,10 +1,10 @@
 # BASE_CODIGO
 
-Fundação web reutilizável v1.31, organizada em um `CLAUDE.md` com regras permanentes e 13 skills temáticas para orientar o Claude Code no desenvolvimento de projetos web.
+Base reutilizável para desenvolvimento web, organizada em um `CLAUDE.md` de roteamento e 13 skills temáticas para orientar o Claude Code no desenvolvimento de projetos.
 
 **Repositório oficial:** [https://github.com/rafavlad/BASE_CODIGO](https://github.com/rafavlad/BASE_CODIGO)  
 **Branch de referência dos links diretos:** `main`  
-**Versão deste pacote:** `1.31-modular-r3`
+**Versão deste pacote:** `2.0.0`
 
 ## Para que serve
 
@@ -44,7 +44,7 @@ BASE_CODIGO/
 
 ## Arquivos principais
 
-- [`CLAUDE.md`](CLAUDE.md): instruções permanentes e matriz de carregamento por fase.
+- [`CLAUDE.md`](CLAUDE.md): instruções permanentes e matriz de carregamento por fase para este repositório de fundação; não deve ser copiado sem adaptação para um projeto de cliente.
 - [Índice do pacote](docs/INDICE-DO-PACOTE.md): links relativos para as 13 skills e indicação de quando carregá-las.
 - [Mensagens de sessão](docs/MENSAGENS-DE-SESSAO.md): modelos de mensagens para iniciar ou retomar cada fase.
 - [Registro cumulativo de alterações](docs/REGISTRO-ALTERACOES.md): um único histórico técnico, com novas entradas adicionadas ao final.
@@ -81,7 +81,7 @@ Algumas interfaces de chat escondem arquivos de diretórios iniciados por ponto,
 5. Siga `docs/MENSAGENS-DE-SESSAO.md` para iniciar uma fase, sem pular as autorizações humanas.
 6. Revise todas as alterações e execute as verificações reais antes de aprovar qualquer entrega.
 
-Para aplicar esta fundação a outro projeto, copie o `CLAUDE.md`, a pasta `.claude/skills/` e somente os documentos de apoio que fizerem sentido. Confirme os caminhos após a cópia e não mantenha cópias divergentes das mesmas skills.
+Para aplicar esta fundação a outro projeto, copie somente as skills necessárias de `.claude/skills/` e os documentos de apoio pertinentes. Crie um `CLAUDE.md` próprio para o cliente, seguindo a skill `documentacao-claude-md` e refletindo a stack, os comandos e as decisões reais daquele projeto. Não copie este `CLAUDE.md` de roteamento sem adaptação e não mantenha cópias divergentes das mesmas skills.
 
 ## Regras essenciais
 

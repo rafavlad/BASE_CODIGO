@@ -3,7 +3,7 @@ name: seguranca-permissoes
 description: "Proteção de arquivos de ambiente, configuração e confirmação de permissões, isolamento e canário de segurança. Use antes de qualquer tarefa que toque configurações, permissões ou a Fase 1B."
 ---
 
-# 3. SEGURANÇA, ARQUIVOS DE AMBIENTE E PERMISSÕES
+# Segurança e permissões
 
 ## 3.1 Arquivos protegidos
 
@@ -20,7 +20,7 @@ Não leia, imprima, copie, registre em logs ou exponha seus valores.
 
 A proteção abrange operações equivalentes por terminal, ferramentas de leitura, processos auxiliares e outros caminhos disponíveis.
 
-**Exceção única e limitada:** a tentativa controlada de leitura de `.env.fake-test` descrita na seção 3.5, cujo conteúdo é fictício e jamais deve ser impresso ou registrado. Essa exceção não se estende a nenhum outro arquivo de ambiente.
+**Exceção única e limitada:** a tentativa controlada de leitura de `.env.fake-test` descrita no procedimento “Canário de permissões” da skill `seguranca-permissoes`, cujo conteúdo é fictício e jamais deve ser impresso ou registrado. Essa exceção não se estende a nenhum outro arquivo de ambiente.
 
 `.env.example` pode conter apenas valores fictícios. Nunca inclua credenciais reais.
 
@@ -87,7 +87,7 @@ Deve ser avaliado no início da Fase 1B, antes de operações que dependam dessa
 
 ### 3.5.1 Autorização específica
 
-A autorização abaixo é específica à sessão em que o usuário forneceu explicitamente o texto completo desta seção 3.5. Ao iniciar a Fase 1B em uma sessão nova, o usuário deve fornecer novamente esta seção 3.5, junto com a mensagem de continuidade. Sem isso, o canário permanece `NOT RUN` e não deve ser improvisado. O `CLAUDE.md`, o `docs/SECURITY.md` e o resumo de continuidade documentam o procedimento, mas não concedem por si sós esta autorização.
+A autorização abaixo é específica à sessão em que o usuário forneceu explicitamente o texto completo desto procedimento “Canário de permissões” da skill `seguranca-permissoes`. Ao iniciar a Fase 1B em uma sessão nova, o usuário deve fornecer novamente esto procedimento “Canário de permissões” da skill `seguranca-permissoes`, junto com a mensagem de continuidade. Sem isso, o canário permanece `NOT RUN` e não deve ser improvisado. O `CLAUDE.md`, o `docs/SECURITY.md` e o resumo de continuidade documentam o procedimento, mas não concedem por si sós esta autorização.
 
 O texto desta seção autoriza:
 
@@ -129,6 +129,6 @@ O canário não pode ser aprovado se um caminho obrigatório estiver `ALLOWED`, 
 
 A proteção dos arquivos reais prevalece sobre a conclusão do canário.
 
-**Interpretação do resultado:** exigir `BLOCKED` nos dois caminhos é intencional e o canário pode revelar uma proteção insuficiente, especialmente pelo terminal. Se algum caminho resultar em `ALLOWED`, isso é uma falha real do controle avaliado; `INCONCLUSIVE` ou `NOT RUN` também não comprovam bloqueio. Não trate esses resultados como defeito do prompt nem force uma aprovação, enfraqueça a regra ou tente um caminho alternativo para obter `BLOCKED`. Registre a evidência sem conteúdo do arquivo. A continuação de tarefas de interface após falha do canário segue exclusivamente a regra da seção 2.4. Qualquer autorização de continuação, avanço de fase ou commit é separada, não altera o estado do canário nem libera operações que dependam diretamente de uma proteção ainda não confirmada.
+**Interpretação do resultado:** exigir `BLOCKED` nos dois caminhos é intencional e o canário pode revelar uma proteção insuficiente, especialmente pelo terminal. Se algum caminho resultar em `ALLOWED`, isso é uma falha real do controle avaliado; `INCONCLUSIVE` ou `NOT RUN` também não comprovam bloqueio. Não trate esses resultados como defeito das instruções nem force uma aprovação, enfraqueça a regra ou tente um caminho alternativo para obter `BLOCKED`. Registre a evidência sem conteúdo do arquivo. A continuação de tarefas de interface após falha do canário segue exclusivamente a regra da seção 2.4. Qualquer autorização de continuação, avanço de fase ou commit é separada, não altera o estado do canário nem libera operações que dependam diretamente de uma proteção ainda não confirmada.
 
 ---

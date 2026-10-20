@@ -3,7 +3,7 @@ name: modulos-opcionais
 description: "Restrições e critérios para módulos futuros como backend, banco, autenticação, uploads, agendamentos, pagamentos e integrações. Use quando um módulo opcional for proposto."
 ---
 
-# 11. MÓDULOS FUTUROS OPCIONAIS
+# Módulos opcionais
 
 Documente os módulos futuros em `docs/MODULES.md`. Não os implemente automaticamente. Cada módulo exige escopo e autorização próprios.
 

@@ -3,7 +3,7 @@ name: aceitacao-final
 description: "Checklist de aceitação técnica por área e regras finais de aprovação. Use antes de declarar concluída uma fase ou fundação."
 ---
 
-# 16. CHECKLIST FINAL DE ACEITAÇÃO
+# Checklist de aceitação final
 
 Avalie individualmente os critérios aplicáveis. Este checklist não substitui os requisitos detalhados das seções anteriores.
 
@@ -25,14 +25,14 @@ Avalie individualmente os critérios aplicáveis. Este checklist não substitui 
 * Importação do módulo de auditoria sem efeitos colaterais.
 * Detecção de execução direta robusta (caminho real) e provada por teste de integração.
 * Classificação, execução e agregação testadas.
-* Fixture real de `npm audit --json`, validação de contagens/lista e identificação de fixtures sintéticos conforme a seção 6.4.1.
+* Fixture real de `npm audit --json`, validação de contagens/lista e identificação de fixtures sintéticos conforme o procedimento de fixture e captura controlada da skill `auditoria-dependencias`.
 * `npm run audit` executado na Fase 1A, com estados individuais registrados; produção `REJECTED` impede a aprovação da fase.
 * Lockfile coerente.
 * `.gitignore` validado, incluindo `.claude/settings.local.json`; `.env.example` não ignorado.
 * `.gitattributes` configurado.
 * Documentação inicial criada.
 * Git inicializado somente após autorização da Fase 0, quando aplicável; sem commit na Fase 1A.
-* Portões de saída da Fase 1A verificados individualmente conforme a tabela da seção 2.1.2, incluindo `npm run audit` executado e estados individuais registrados; produção `REJECTED` bloqueia a fase.
+* Portões de saída da Fase 1A verificados individualmente conforme a tabela dos critérios de saída da skill `fases-e-autorizacoes`, incluindo `npm run audit` executado e estados individuais registrados; produção `REJECTED` bloqueia a fase.
 * `settings.json` criado e validado na Fase 1A, sem exigir confirmação de carregamento antes de reinício; carregamento confirmado na Fase 1B antes do canário.
 * Em projeto existente, `format:check` utilizado sem reformatar arquivos preexistentes; formatação automática restrita aos arquivos criados na fase atual.
 
@@ -42,7 +42,7 @@ Avalie individualmente os critérios aplicáveis. Este checklist não substitui 
 * React Router instalado na Fase 1B.
 * Zod utilizado efetivamente na validação do contato.
 * Nenhuma integração fictícia apresentada como real.
-* Para a fundação genérica, `DIRETORIO_REFERENCIAS_PROJETO` permanece vazio por padrão; referências de cliente são analisadas no prompt específico desse cliente, salvo autorização expressa excepcional.
+* Para a fundação genérica, `DIRETORIO_REFERENCIAS_PROJETO` permanece vazio por padrão; referências de cliente são analisadas nas instruções da tarefa específico desse cliente, salvo autorização expressa excepcional.
 * Quando a tarefa de um projeto de cliente depender de design/referências específicas, pasta configurada ou caminho solicitado antes da análise, inventário recursivo concluído, arquivos não suportados/parciais identificados e originais preservados.
 * Decisões visuais e funcionais relevantes rastreáveis a requisitos ou referências reais; ambiguidades e conflitos registrados sem invenção silenciosa.
 * Nenhum conteúdo/identidade de cliente foi incorporado ao núcleo reutilizável; personalizações excepcionalmente autorizadas ficaram em `src/client/`.
@@ -71,10 +71,10 @@ Avalie individualmente os critérios aplicáveis. Este checklist não substitui 
 * O agregado aplica a política de produção sem ocultar a auditoria completa.
 * Estados individuais preservados e emitidos em linhas de formato fixo.
 * Campo `cause` presente nos resultados, com categorias e evidências conforme a seção 6.5; causas de rede não inferidas de erros genéricos.
-* Saída normal real e fixture capturados antes da execução principal de `npm run audit`, conforme a seção 6.4.1.
-* Capturas manuais controladas da falha de rede do npm realizadas separadamente para árvore completa e produção conforme a seção 6.4.1, ou limitações `PENDING MANUAL` documentadas por modo sem alegar validação empírica.
+* Saída normal real e fixture capturados antes da execução principal de `npm run audit`, conforme o procedimento de fixture e captura controlada da skill `auditoria-dependencias`.
+* Capturas manuais controladas da falha de rede do npm realizadas separadamente para árvore completa e produção conforme o procedimento de fixture e captura controlada da skill `auditoria-dependencias`, ou limitações `PENDING MANUAL` documentadas por modo sem alegar validação empírica.
 * Linhas de causa `AUDIT_PROD_CAUSE`, `AUDIT_ALL_CAUSE` e `AUDIT_AGGREGATE_CAUSE` consistentes com estados e evidências.
-* Exceção de rede da Fase 1A e sua aplicação ao agregado verificadas conforme a seção 2.1.2, sem alterar estados técnicos e distinguindo falha comum de causa independente.
+* Exceção de rede da Fase 1A e sua aplicação ao agregado verificadas conforme os critérios de saída da skill `fases-e-autorizacoes`, sem alterar estados técnicos e distinguindo falha comum de causa independente.
 * Subprocessos utilizados somente para executar o `npm audit` real.
 * Modos validados contra lista fixa.
 * Modos ausentes, desconhecidos e argumentos adicionais inválidos rejeitados antes de qualquer auditoria.
@@ -83,7 +83,7 @@ Avalie individualmente os critérios aplicáveis. Este checklist não substitui 
 * Importação sem execução de auditorias.
 * JSON truncado e corrompido tratados como incompletos.
 * Timeout como constante interna, não configurável por argumento, testado e justificado pelo fluxo de endpoints e pelas retentativas realmente aplicáveis à versão instalada, sem presumir fallback Quick Audit; `fetch-retries` não é multiplicado cegamente pelos endpoints `POST`; se o orçamento exceder 10 minutos ou for desproporcional, valor/alternativas apresentados ao usuário e decisão explícita registrada antes de fixar a constante; timeout sem evidência direta de rede permanece `cause=timeout`/`unknown` e bloqueia a exceção de rede.
-* Capturas controladas de rede separadas para a árvore completa e a invocação de produção (`--omit=dev` quando equivalente ao modo `prod`), com `npm_config_fetch_retries=0` e `npm_config_fetch_timeout` curto apenas no processo filho; shell/ambiente confirmado, configuração persistente inalterada e valores/diagnósticos efetivamente usados registrados; distinção entre códigos de rede observados e fixtures sintéticos. Se tecnicamente impossível, `PENDING MANUAL` é registrado e não satisfaz automaticamente o portão obrigatório; aplicar a seção 2.1.2.
+* Capturas controladas de rede separadas para a árvore completa e a invocação de produção (`--omit=dev` quando equivalente ao modo `prod`), com `npm_config_fetch_retries=0` e `npm_config_fetch_timeout` curto apenas no processo filho; shell/ambiente confirmado, configuração persistente inalterada e valores/diagnósticos efetivamente usados registrados; distinção entre códigos de rede observados e fixtures sintéticos. Se tecnicamente impossível, `PENDING MANUAL` é registrado e não satisfaz automaticamente o portão obrigatório; aplicar os critérios de saída da skill `fases-e-autorizacoes`.
 * Encerramentos inesperados e falhas de processo tratados e testados.
 * Compatibilidade entre Windows e Linux verificada pela matriz de CI ou registrada como `PENDING MANUAL`.
 * Job de auditoria independente do job de qualidade, ou `if: always()` documentado.
@@ -94,7 +94,7 @@ Avalie individualmente os critérios aplicáveis. Este checklist não substitui 
 * Dependabot configurado sem auto-merge.
 * Pinagem das actions verificada ou pendência documentada.
 * Permissões mínimas de `GITHUB_TOKEN`.
-* Workflow revisado manualmente e registrado como `PENDING MANUAL` até execução real no GitHub; essa pendência é não bloqueante antes da primeira execução, conforme a seção 2.1.2.
+* Workflow revisado manualmente e registrado como `PENDING MANUAL` até execução real no GitHub; essa pendência é não bloqueante antes da primeira execução, conforme os critérios de saída da skill `fases-e-autorizacoes`.
 * Pendências externas não bloqueantes listadas separadamente das pendências técnicas bloqueantes.
 
 ## 16.4 Qualidade, regressão e integridade

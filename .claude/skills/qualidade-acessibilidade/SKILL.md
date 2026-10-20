@@ -3,7 +3,7 @@ name: qualidade-acessibilidade
 description: "Acessibilidade, responsividade, metadados, verificações finais, regressão e revisão de diff. Use ao criar ou validar interface e antes de concluir fases."
 ---
 
-# 9. ACESSIBILIDADE, RESPONSIVIDADE E METADADOS
+# Qualidade e acessibilidade
 
 ## 9.1 Acessibilidade
 
@@ -58,7 +58,7 @@ Não inclua informações de SEO específicas de um cliente que não tenham sido
 
 ---
 
-# 10. TESTES, VERIFICAÇÃO FINAL E REVISÃO DO DIFF
+## Testes, verificação final e revisão do diff
 
 ## 10.1 Testes gerais
 
