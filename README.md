@@ -1,0 +1,94 @@
+# CLAUDE-SKILLS
+
+Fundação web reutilizável v1.31, organizada em um `CLAUDE.md` com regras permanentes e 13 skills temáticas para orientar o Claude Code no desenvolvimento de projetos web.
+
+**Repositório oficial:** [https://github.com/rafavlad/CLAUDE-SKILLS](https://github.com/rafavlad/CLAUDE-SKILLS)  
+**Branch de referência dos links diretos:** `main`  
+**Versão deste pacote:** `1.31-modular-r2`
+
+## Para que serve
+
+Este repositório concentra regras técnicas reutilizáveis para desenvolvimento web: arquitetura, fases e autorizações, segurança, auditoria de dependências, CI, interface, qualidade, Git, documentação, continuidade e critérios de aceitação.
+
+O pacote não é, por si só, um aplicativo web pronto. Ele documenta o processo e as regras que o Claude Code deve seguir ao trabalhar em um projeto.
+
+## Estrutura oficial
+
+```text
+CLAUDE-SKILLS/
+├── CLAUDE.md
+├── .claude/
+│   └── skills/
+│       ├── aceitacao-final/SKILL.md
+│       ├── arquitetura-stack/SKILL.md
+│       ├── auditoria-dependencias/SKILL.md
+│       ├── ci-dependabot/SKILL.md
+│       ├── continuidade-sessoes/SKILL.md
+│       ├── documentacao-claude-md/SKILL.md
+│       ├── fases-e-autorizacoes/SKILL.md
+│       ├── git-integridade/SKILL.md
+│       ├── interface-cliente-referencias/SKILL.md
+│       ├── modulos-opcionais/SKILL.md
+│       ├── principios-globais/SKILL.md
+│       ├── qualidade-acessibilidade/SKILL.md
+│       └── seguranca-permissoes/SKILL.md
+├── docs/
+│   ├── INDICE-DO-PACOTE.md
+│   ├── MENSAGENS-DE-SESSAO.md
+│   ├── REGISTRO-ALTERACOES.md
+│   └── RELATORIO-DE-VALIDACAO.md
+└── MANIFEST.json
+```
+
+**Importante:** a pasta `.claude` começa com ponto de propósito. Não mantenha outra cópia duplicada das skills em `skills/` na raiz. O diretório `.claude/skills/<nome>/SKILL.md` é o caminho canônico esperado pelo Claude Code.
+
+## Arquivos principais
+
+- [`CLAUDE.md`](CLAUDE.md): instruções permanentes e matriz de carregamento por fase.
+- [Índice do pacote](docs/INDICE-DO-PACOTE.md): links relativos para as 13 skills e indicação de quando carregá-las.
+- [Mensagens de sessão](docs/MENSAGENS-DE-SESSAO.md): modelos de mensagens para iniciar ou retomar cada fase.
+- [Registro cumulativo de alterações](docs/REGISTRO-ALTERACOES.md): um único histórico técnico, com novas entradas adicionadas ao final.
+- [Relatório de validação](docs/RELATORIO-DE-VALIDACAO.md): histórico da migração e verificações estruturais realizadas.
+- [`MANIFEST.json`](MANIFEST.json): tamanhos e SHA-256 dos arquivos distribuídos, exceto o próprio manifesto.
+
+## Links diretos para leitura em Claude (chat)
+
+Algumas interfaces de chat escondem arquivos de diretórios iniciados por ponto, como `.claude/`. Se a integração do GitHub não permitir selecionar uma skill, use o endereço `raw.githubusercontent.com` correspondente. Estes links dependem de os arquivos estarem publicados na branch `main` com a estrutura acima.
+
+- [`CLAUDE.md` (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/CLAUDE.md)
+- [`README.md` (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/README.md)
+- [Índice (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/docs/INDICE-DO-PACOTE.md)
+- [Princípios globais (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/principios-globais/SKILL.md)
+- [Fases e autorizações (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/fases-e-autorizacoes/SKILL.md)
+- [Segurança e permissões (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/seguranca-permissoes/SKILL.md)
+- [Arquitetura e stack (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/arquitetura-stack/SKILL.md)
+- [Auditoria de dependências (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/auditoria-dependencias/SKILL.md)
+- [CI e Dependabot (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/ci-dependabot/SKILL.md)
+- [Interface e referências (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/interface-cliente-referencias/SKILL.md)
+- [Qualidade e acessibilidade (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/qualidade-acessibilidade/SKILL.md)
+- [Módulos opcionais (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/modulos-opcionais/SKILL.md)
+- [Git e integridade (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/git-integridade/SKILL.md)
+- [Documentação (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/documentacao-claude-md/SKILL.md)
+- [Continuidade de sessões (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/continuidade-sessoes/SKILL.md)
+- [Aceitação final (Raw)](https://raw.githubusercontent.com/rafavlad/CLAUDE-SKILLS/main/.claude/skills/aceitacao-final/SKILL.md)
+
+## Como usar com Claude Code
+
+1. Clone o repositório ou baixe o pacote completo.
+2. Abra a raiz do repositório no Claude Code.
+3. Mantenha `CLAUDE.md` e `.claude/skills/` juntos e versionados.
+4. Leia `docs/INDICE-DO-PACOTE.md` e carregue explicitamente as skills exigidas pela fase, conforme `CLAUDE.md`.
+5. Siga `docs/MENSAGENS-DE-SESSAO.md` para iniciar uma fase, sem pular as autorizações humanas.
+6. Revise todas as alterações e execute as verificações reais antes de aprovar qualquer entrega.
+
+Para aplicar esta fundação a outro projeto, copie o `CLAUDE.md`, a pasta `.claude/skills/` e somente os documentos de apoio que fizerem sentido. Confirme os caminhos após a cópia e não mantenha cópias divergentes das mesmas skills.
+
+## Regras essenciais
+
+- Não coloque segredos, tokens, chaves de API ou arquivos `.env` reais no GitHub.
+- A IA ajuda na produção, mas os profissionais continuam responsáveis por compreender e validar o código.
+- Não declare testes aprovados sem executá-los.
+- O histórico técnico cumulativo deve ficar em `docs/REGISTRO-ALTERACOES.md`; acrescente entradas ao final sem apagar o histórico anterior.
+- Resumos de continuidade são separados do histórico técnico e seguem as regras de `continuidade-sessoes`.
+
+Consulte sempre a documentação oficial do Claude Code para confirmar detalhes que dependam da versão instalada.
