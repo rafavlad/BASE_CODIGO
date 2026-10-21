@@ -4,7 +4,7 @@ Base reutilizável para desenvolvimento web, organizada em um `CLAUDE.md` de rot
 
 **Repositório oficial:** [https://github.com/rafavlad/BASE_CODIGO](https://github.com/rafavlad/BASE_CODIGO)  
 **Branch de referência dos links diretos:** `main`  
-**Versão deste pacote:** `2.0.0`
+**Versão deste pacote:** `2.0.1`
 
 ## Para que serve
 
@@ -34,6 +34,7 @@ BASE_CODIGO/
 │       └── seguranca-permissoes/SKILL.md
 ├── docs/
 │   ├── INDICE-DO-PACOTE.md
+│   ├── MAPA-DE-LEITURA.md
 │   ├── MENSAGENS-DE-SESSAO.md
 │   ├── REGISTRO-ALTERACOES.md
 │   └── RELATORIO-DE-VALIDACAO.md
@@ -46,6 +47,7 @@ BASE_CODIGO/
 
 - [`CLAUDE.md`](CLAUDE.md): instruções permanentes e matriz de carregamento por fase para este repositório de fundação; não deve ser copiado sem adaptação para um projeto de cliente.
 - [Índice do pacote](docs/INDICE-DO-PACOTE.md): links relativos para as 13 skills e indicação de quando carregá-las.
+- [Mapa central de leitura](docs/MAPA-DE-LEITURA.md): ponto de entrada único com links Raw para consultar esta base por chat. O mapa orienta a leitura; não carrega arquivos automaticamente.
 - [Mensagens de sessão](docs/MENSAGENS-DE-SESSAO.md): modelos de mensagens para iniciar ou retomar cada fase.
 - [Registro cumulativo de alterações](docs/REGISTRO-ALTERACOES.md): um único histórico técnico, com novas entradas adicionadas ao final.
 - [Relatório de validação](docs/RELATORIO-DE-VALIDACAO.md): histórico da migração e verificações estruturais realizadas.
@@ -53,7 +55,7 @@ BASE_CODIGO/
 
 ## Links diretos para leitura em Claude (chat)
 
-Algumas interfaces de chat escondem arquivos de diretórios iniciados por ponto, como `.claude/`. Se a integração do GitHub não permitir selecionar uma skill, use o endereço `raw.githubusercontent.com` correspondente. Estes links dependem de os arquivos estarem publicados na branch `main` com a estrutura acima.
+Algumas interfaces de chat escondem arquivos de diretórios iniciados por ponto, como `.claude/`. Comece por [MAPA-DE-LEITURA.md](docs/MAPA-DE-LEITURA.md), que reúne os links Raw da base. Se precisar abrir um arquivo individual, use o endereço `raw.githubusercontent.com` correspondente. Estes links dependem de os arquivos estarem publicados na branch `main` com a estrutura acima.
 
 - [`CLAUDE.md` (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/CLAUDE.md)
 - [`README.md` (Raw)](https://raw.githubusercontent.com/rafavlad/BASE_CODIGO/main/README.md)

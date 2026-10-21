@@ -46,7 +46,8 @@ Use exatamente os estados `APPROVED`, `REJECTED`, `NOT RUN`, `INCOMPLETE`, `PEND
 
 ## Mapa e comandos
 
-- Índice, matriz de skills e mapa de migração: `docs/INDICE-DO-PACOTE.md`.
+- Índice e matriz de skills: `docs/INDICE-DO-PACOTE.md`.
+- Mapa central com links Raw para leitura por chat: `docs/MAPA-DE-LEITURA.md`. Esse mapa não substitui a leitura explícita das skills nem carrega arquivos automaticamente.
 - Mensagens curtas para iniciar sessões: `docs/MENSAGENS-DE-SESSAO.md`.
 - Documentação do projeto-base, criação de `CLAUDE.md` específico por cliente, histórico cumulativo e critérios de entrega: skill `documentacao-claude-md` e arquivo `docs/REGISTRO-ALTERACOES.md`.
 - Antes de cada ação, confirme qual fase foi autorizada e que todos os requisitos da skill aplicável foram lidos. Ao finalizar/interromper, produza relatório e resumo de continuidade conforme as skills de fases e continuidade.

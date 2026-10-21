@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "files": [
     {
       "path": ".claude/skills/aceitacao-final/SKILL.md",
@@ -68,18 +68,23 @@
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 8275,
-      "sha256": "a220932002d1e737ecf026d19c4b8a221993debe689dd1cfb6fd450bcc38317a"
+      "bytes": 8429,
+      "sha256": "2c775c13708de1ffcb74661218bdf997535c86ae5069f8c702917ac37cae6580"
     },
     {
       "path": "README.md",
-      "bytes": 6817,
-      "sha256": "556b8a2f9f919d6815e339089227142ea476875b9082fb9f8d2c529b5716d0fc"
+      "bytes": 7112,
+      "sha256": "b9fcbce1dc48ed5d90d6b667bda8697ae8a7f8aa4e7018308bf4e54e38971140"
     },
     {
       "path": "docs/INDICE-DO-PACOTE.md",
-      "bytes": 6947,
-      "sha256": "ffbc89ff2bc836aca11150b1ecfcb3a335ba9c379c3569638502e091c71b0221"
+      "bytes": 7257,
+      "sha256": "0d812dbef423b8f5121a0236ebf05779c6c08a549686dc15861424914ce5e1e9"
+    },
+    {
+      "path": "docs/MAPA-DE-LEITURA.md",
+      "bytes": 6323,
+      "sha256": "1f2f92971e9e6b2d668b0c078f9a1b14cd9e361094ba24358164777291612ef0"
     },
     {
       "path": "docs/MENSAGENS-DE-SESSAO.md",
@@ -88,13 +93,13 @@
     },
     {
       "path": "docs/REGISTRO-ALTERACOES.md",
-      "bytes": 5385,
-      "sha256": "3357a5326e4db30d3a92a974ddf56ba2cf74a978e75a03f304faaa02bf1ff523"
+      "bytes": 6720,
+      "sha256": "8e0b8383f03ba9be3d5d9760932d2213d8e909854f693b011dafc43ffbde4298"
     },
     {
       "path": "docs/RELATORIO-DE-VALIDACAO.md",
-      "bytes": 5637,
-      "sha256": "7d98f486fb14d07867d8c93e6a919612f88953c000226baedd2e7a30349ccd8d"
+      "bytes": 6258,
+      "sha256": "4ef397cf5562b92a32c72e779c0951e08894b45fefb538935eb64311d9d5476a"
     }
   ]
 }

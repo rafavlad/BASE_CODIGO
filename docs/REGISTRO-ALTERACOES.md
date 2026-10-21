@@ -47,3 +47,13 @@ Copie o modelo abaixo para o final do arquivo e substitua os marcadores da nova 
 - **Verificações executadas:** JSON do manifesto válido; os 19 caminhos listados existem; tamanhos e hashes SHA-256 correspondem aos arquivos; as 13 skills têm frontmatter válido e exatamente um título principal funcional; links Markdown relativos locais verificados; busca por identificações antigas sem resultados; ZIP reaberto e integridade conferida.
 - **Resultados observados:** alterações aplicadas localmente ao pacote de distribuição; o repositório remoto não foi alterado por esta operação.
 - **Pendências/limitações:** publicar esta edição no GitHub e, depois, exercitar as skills numa sessão real do Claude Code. A validação estrutural não equivale à execução real das fases.
+
+## 2026-10-20 | Mapa central de leitura e alinhamento do pacote 2.0.1
+
+- **Objetivo:** oferecer um único ponto de entrada para assistentes de chat consultarem a BASE_CODIGO e manter a identificação da versão coerente entre os arquivos distribuídos.
+- **Arquivos afetados:** `docs/MAPA-DE-LEITURA.md`, `README.md`, `docs/INDICE-DO-PACOTE.md`, `CLAUDE.md`, `docs/RELATORIO-DE-VALIDACAO.md`, `docs/REGISTRO-ALTERACOES.md` e `MANIFEST.json`.
+- **Alterações:** criado o mapa central com links Raw dos documentos e das 13 skills; README, índice e instruções permanentes apontam para o mapa; versão do pacote definida como `2.0.1` no README e manifesto; registro e relatório atualizados sem apagar entradas históricas.
+- **Verificações executadas:** verificação de estrutura, links relativos locais, sintaxe e contagem do manifesto, tamanhos e hashes SHA-256 de todos os arquivos listados, presença dos caminhos de skills e integridade do ZIP.
+- **Resultados observados:** arquivos locais e links relativos verificados; manifesto consistente com os bytes finais do pacote.
+- **Pendências/limitações:** este ZIP não publica nem altera o repositório remoto. Após a publicação pelo proprietário, os links Raw precisam ser testados no GitHub; a execução em uma sessão real do Claude Code ainda não foi realizada.
+

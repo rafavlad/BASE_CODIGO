@@ -7,6 +7,7 @@
 - O `CLAUDE.md` da raiz contém as regras sempre ativas e o mapa de skills obrigatórias por fase. Ele funciona como roteador deste repositório de fundação, **não como um `CLAUDE.md` pronto para copiar sem adaptação a projetos de clientes**.
 - Cada skill está em `.claude/skills/<nome>/SKILL.md` e possui um `name` e uma `description` no frontmatter. As skills são unidades temáticas que podem ser carregadas separadamente, mas algumas dependem de outras skills; siga a matriz do `CLAUDE.md` e as referências explícitas.
 - Os números de subseções dentro dos arquivos são identificadores internos de referência. Não exigem nem apontam para um documento mestre externo.
+- `docs/MAPA-DE-LEITURA.md` é a entrada única com links Raw para assistentes de chat. Ele orienta a leitura, mas não carrega arquivos automaticamente nem concede acesso.
 - `docs/MENSAGENS-DE-SESSAO.md` contém mensagens de preparação/retomada e lembretes de autorização. Não substitui o `CLAUDE.md` nem as skills normativas.
 - `docs/REGISTRO-ALTERACOES.md` é o único histórico técnico cumulativo do pacote. Novas entradas são acrescentadas ao final sem apagar as antigas; não deve conter segredos, logs extensos, diffs completos ou snapshots.
 - `docs/RELATORIO-DE-VALIDACAO.md` registra verificações estruturais realizadas e limitações. Uma validação documental não prova que o comportamento já foi testado numa sessão real.
@@ -46,6 +47,6 @@ As cinco skills globais obrigatórias para toda fase são `principios-globais`, 
 
 O `CLAUDE.md` deste repositório é um roteador para a própria fundação. Em cada projeto de cliente, crie um `CLAUDE.md` específico, com os comandos, a stack, a estrutura, as decisões e as regras permanentes daquele projeto, seguindo `documentacao-claude-md`. Copie as skills relevantes sem duplicá-las em caminhos alternativos e mantenha personalizações do cliente fora da base genérica.
 
-## Links diretos para leitura no chat
+## Leitura em assistentes de chat
 
-Se uma interface de chat esconder pastas iniciadas por ponto, use links Raw da branch `main` no README do repositório. Isso é um recurso de leitura de referência; não equivale a execução local do Claude Code nem concede acesso de escrita ao GitHub.
+Comece por [`MAPA-DE-LEITURA.md`](MAPA-DE-LEITURA.md), que reúne os links Raw da branch `main` para os arquivos principais e as 13 skills. O mapa é um índice para leitura, não um mecanismo de carregamento automático. O assistente deve confirmar individualmente os arquivos que realmente acessou. Isso não equivale à execução local do Claude Code nem concede acesso de escrita ao GitHub.
